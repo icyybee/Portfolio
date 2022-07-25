@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>My portfolio</title>
+        <script src="https://kit.fontawesome.com/7e7337fbdd.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <!-------HEADER--------->
+        <header class="header" id="home">
+            <div class="container">
+                <nav class="sticky">
+                    <div class="logo"><a href="#">Beatr <span>ice.</span></a></div>
+                    <div class="logo-block"><a href="#">Beatr <span>ice.</span></a></div>
+                    <ul class="main-nav js--main-nav">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#bio">Bio</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars"></i>
+                </nav>
+
+                <div class="header__text">
+                    <h1 class="header__head">Hi I'm <span>Beatrice,</span><br>
+                        Front-End Web Developer
+                    </h1>
+
+                    <div class="header__img">
+                        <img src="./img/background2.jpeg" alt="header img">
+                        <div class="header__img--overlay">
+                            <div class="header__img--overlay-text">Welcome<i class="fa-solid fa-hand-wave"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-------ABOUT ME--------->
+        <div class="bio js--bio" id="bio">
+            <div class="container">
+                <h1 class="bio__head">About Me</h1>
+                <p class="bio__text">I have a passion for coding and challenging myself creatively. I have the skill to bring your ideas and projects to life on the web. I
+                    have experience working with various clients from tech field to health field. When I'm not coding , you
+                    can find me bingewatching kdramas and animes or playing videogames. Thanks for stopping by, check out my
+                    work.
+                </p>
+
+                <div class="bio__lists">
+                    <div class="bio__titles">
+                        <p class="bio__links head-active" onclick="opentab('skills')">Skills</p>
+
+                        <div class="bio__contents content-active" id="skills">
+                            <ul>
+                                <li><input type="checkbox" name="skill" id="skill1" checked> HTML5</li>
+                                <li><input type="checkbox" name="skill" id="skill2" checked> CSS3 / SASS</li>
+                                <li><input type="checkbox" name="skill" id="skill3" checked> JAVASCRIPT</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bio__titles">
+                        <p class="bio__links" onclick="opentab('experience')">Experience</p>
+
+                        <div class="bio__contents" id="experience">
+                            <ul>
+                                <li><span>2020 - 2021</span><br>Freelancer Front-End Developer at Mandiz Honey</li>
+                                <li><span>2021 - 2022</span><br>Freelancer Front-End Developer at Ghostmarv Beats</li>
+                                <li><span>2022 - Current</span><br>Freelancer</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-------PROJECTS--------->
+        <div class="projects" id="projects">
+            <div class="container">
+                <h1 class="projects__head">Explore My Work</h1>
+                <div class="projects__list">
+                    <div class="work">
+                        <img src="./img/work-1.png" alt="project 1">
+                        <div class="layer">
+                            <h3>Empire properties</h3>
+                            <p>Real Housing website designed and coded by me using HTML, SASS and JavaScript</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="./img/work-2.png" alt="project 2">
+                        <div class="layer">
+                            <h3>MANdiz Honey</h3>
+                            <p>Upscale Honey E-commerce website designed and coded by me using HTML, SASS and JavaScript</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="./img/work-3.png" alt="project 3">
+                        <div class="layer">
+                            <h3>Ghostmarv Beats</h3>
+                            <p>Musical Brochure website designed and coded by me using HTML, SASS and JavaScript </p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="./img/work-1.png" alt="project 4">
+                        <div class="layer">
+                            <h3>Deluxe Racing</h3>
+                            <p>Car racing gaming website designed and coded by me using HTML, SASS and JavaScript </p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="./img/work-2.png" alt="project 5">
+                        <div class="layer">
+                            <h3>Cappucino Coffee</h3>
+                            <p>Musical Brochure website designed and coded by me using HTML, SASS and JavaScript </p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="./img/work-3.png" alt="project 3">
+                        <div class="layer">
+                            <h3>Portfolio</h3>
+                            <p>Personal portfolio website designed and coded by me using HTML, SASS and JavaScript </p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="btn btn--ghost">See More</a>
+            </div>
+
+            
+        <!-------CONTACT--------->
+            <div class="contact" id="contact">
+                <div class="container contact__box">
+                    <div class="contact__form">
+                        <h1 class="contact__head">Contact Me</h1>
+                        <p><i class="fas fa-paper-plane"></i>ushiksmandi@gmail.com</p>
+                        <p><i class="fas fa-phone-square-alt"></i>+234 819 067 5670</p>
+                        <div class="contact__icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+
+                        <a href="#" class="btn btn--full" download>Download CV</a>
+                    </div>
+
+                    <div class="contact__form">
+                        <form action="#" class="form">
+                            <div class="form__group">
+                                <input type="text" class="form__input" placeholder="Your Name" id="name" required>
+                                <label for="name" class="form__label">Your Name</label>
+                            </div>
+
+                            <div class="form__group">
+                                <input type="email" class="form__input" placeholder="Your Email" id="email" required>
+                                <label for="email" class="form__label">Your Email</label>
+                            </div>
+
+                            <div class="form__group">
+                                <input type="text" class="form__input" placeholder="Your Message" id="message" required>
+                                <label for="message" class="form__label">Your Message</label>
+                            </div>
+
+                            <div class="form__group">
+                                <button class="btn btn--full">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-------CONTACT--------->
+            <div class="footer">
+                <p class="copyright">
+                    &copy; Copyright 2022 by Beatrice Egumandi.
+                </p>
+            </div>
+        </div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+        <script src="/jquery.waypoints.min.js"></script>
+        <script src="/script.js"></script>
+    </body>
+</html>

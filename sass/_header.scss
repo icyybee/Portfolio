@@ -1,0 +1,205 @@
+.header {
+    width: 100%;
+    height: 100vh;
+    //margin-bottom: 5rem;
+
+    &__text {
+        margin-top: 30%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+        @include respond(phone) {
+            margin-top: 100%;
+            font-size: 16px;
+        }
+
+        & span {
+            color: var(--color-primary);
+        }
+    }
+
+    &__head {
+        grid-column: 1 / 2;
+
+        font-size: 30px;
+    }
+
+    &__img {
+        grid-column: 2 / -1;
+        margin-top: -10rem;
+        margin-left: 10rem;
+        position: relative;
+        //width: 50%;
+
+        &:hover &--overlay {
+            height: 100%;
+        }
+
+        & img {
+            width: 100%;
+            border-radius: 8px;
+            display: block;
+            cursor: pointer;
+        }
+
+        &--overlay {
+            position: absolute;
+            border-radius: 8px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: var(--color-primary);
+            overflow: hidden;
+            width: 100%;
+            height: 0;
+            cursor: pointer;
+            transition: .5s ease;
+
+            &-text {
+                white-space: nowrap; 
+                color: var(--color-white);
+                font-size: 4rem;
+                position: absolute;
+                overflow: hidden;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+
+                & i {
+                    color: var(--color-white);
+                    width: 1rem;
+                }
+            }
+        }
+    }
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    & fa {
+        display: none;
+
+        @include respond(phone) {
+            display: block;
+            font-size: 2.5rem;
+        }
+    }
+
+    & ul {
+
+        @include respond(phone) {
+            background-color: #FF3366;
+            position: fixed;
+            top: 0;
+            right: -20rem;
+            width: 20rem;
+            height: 100vh;
+            padding-top: 5rem;
+        }
+
+        & fa {
+            position: absolute;
+            top: 2.5rem;
+            left: 2.5rem;
+            cursor: pointer;
+        }
+    }
+
+    & ul li {
+        display: inline-block;
+        list-style: none;
+        margin: 1rem 2rem;
+    
+        @include respond(phone) {
+            display: block;
+            margin: 2.5rem;
+        }
+
+        & a {
+            color: var(--color-white);
+            text-decoration: none;
+            font-size: 1.7rem;
+            position: relative;
+        }
+
+        & a::after {
+            content: '';
+            position: absolute;
+            background-color: var(--color-primary);
+            height: 2px;
+            bottom: -5px;
+            width: 0;
+            left: 0;
+            transition: all .5s;
+        }
+
+        & a:hover::after {
+            width: 100%;
+        }
+    }
+
+}
+
+.logo {
+    font-size: 3.5rem;
+    font-weight: 600;
+    
+    & a {
+        color: var(--color-white);
+        text-decoration: none;
+    }
+     
+    & a span {
+        color: var(--color-primary);
+    }
+}
+
+.logo-block {
+    font-size: 3.5rem;
+    font-weight: 600;
+    display: none;
+    
+    & a {
+        color: var(--color-primary-dark);
+        text-decoration: none;
+    }
+     
+    & a span {
+        color: var(--color-black);
+    }
+}
+
+/*sticky-nav*/
+.sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(205, 144, 144, 20%);
+    box-shadow: 2px 2px var(--color-primary-dark);   
+    z-index: 9999;
+    filter: opacity(0.6); 
+
+    @include respond(phone) {
+        display: none;
+    }
+
+    & .main-nav {
+        margin-top: 1rem;
+    }
+
+    & .main-nav li a:link,
+    & .main-nav li a:visited {
+        color: var(--color-grey-dark-3);
+        padding: 1.4rem 0;
+    }
+
+    & .logo { display: none; }
+    & .logo-block { display: block; }
+}
+

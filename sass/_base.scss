@@ -1,0 +1,105 @@
+:root {
+    --color-primary: #eb2f64;
+    --color-primary-light: #FF3366;
+    --color-primary-dark: #BA265D;
+
+    --color-white: #fff;
+    --color-grey-light-2: #f4f2f2;
+    --color-grey-light-3: #f0eeee;
+    --color-grey-light-4: #ccc;
+    
+    --color-grey-dark-1: #333;
+    --color-grey-dark-2: #777;
+    --color-grey-dark-3: #555;
+
+    --color-black: #000;
+
+    --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
+    --shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
+
+    --line: 1px solid var(--color-grey-light-2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color-white);
+    min-height: 100vh;
+    background: var(--color-black);
+}
+
+::selection {
+    background-color: var(--color-primary-dark);
+    color: var(--color-white);
+}
+
+.container {
+    padding: 1rem 10%;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+
+//Buttons
+.btn {
+    padding: 1.4rem 5rem;
+    display: block;
+    border: 1px solid var(--color-primary-dark);
+    width: fit-content;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--color-white);
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    
+    &--ghost {
+        margin: 5rem auto;
+        transition: background-image .5s;
+
+        &:hover {
+            background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
+        }
+    }
+    
+    &--full {
+        background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
+        transition: background-image .5s;
+        cursor: pointer;
+        
+        &:hover {
+            background-image: linear-gradient(to right, var(--color-primary-dark), var(--color-primary-light));
+        }
+    }
+}
+
+//Responsive
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 600px) {@content;}
+    }
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 900px) {@content;}
+    }
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 1200px) {@content;}
+    }
+}

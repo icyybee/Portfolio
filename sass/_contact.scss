@@ -1,0 +1,108 @@
+.contact {
+    margin: 5rem 0;
+
+    &__box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__head {
+        font-weight: 600;
+        font-size: 4rem;
+        color: var(--color-white);
+        margin-bottom: 5rem;
+        
+        &::after {
+            content: "";
+            display: block;
+            height: 2px;
+            background-color: var(--color-primary);
+            width: 10rem;
+            margin-left: 5rem;
+        }
+    }
+
+    &__icons {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+
+        & a {
+            text-decoration: none;
+            font-size: 2rem;
+            margin-right: 2rem;
+            color: #956868;
+            display: inline-block;
+            transition: all .5s;
+
+            &:hover {
+                transform: translateY(-3px);
+                color: var(--color-primary);
+            }
+        }
+    }
+
+    &__form {
+        width: 100%;
+
+        & p {
+            margin-top: 3rem;
+            font-size: 1.5rem;
+    
+            & i {
+                color: var(--color-primary);
+                font-size: 2.5rem;
+                margin-right: 1.5rem;
+            }
+        }
+    }
+    
+}
+
+.form {
+    &__group:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+
+    &__input {
+        font-size: 1.5rem;
+        font-family: inherit;
+        color: inherit;
+        padding: 1.5rem 2rem;
+        border-radius: 5px;
+        background-color: var(--color-grey-dark-1);
+        border: none;
+        border-bottom: 3px solid transparent;
+        width: 90%;
+        display: block;
+        transition: all .3s;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba(var(--color-black), .1);
+            border-bottom: 3px solid var(--color-primary);
+        }
+
+        &:focus:invalid {
+            border-bottom: 3px solid var(--color-secondary-dark);
+        }
+
+        &::-webkit-input-placeholder {
+            color: var(--color-grey-dark-2);
+        }
+    }
+
+    &__label {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-left: 2rem;
+        margin-top: .7rem;
+        display: block;
+        transition: all .3s;
+    }
+
+    &__input:placeholder-shown + &__label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem);
+    }
+}
