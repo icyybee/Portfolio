@@ -4,6 +4,11 @@
     &__box {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    
+        @include respond(phone) {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     &__head {
@@ -43,6 +48,10 @@
 
     &__form {
         width: 100%;
+
+        @include respond(phone) {
+            margin-bottom: 5rem;
+        }
 
         & p {
             margin-top: 3rem;

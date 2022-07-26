@@ -18,14 +18,14 @@
                 <nav class="sticky">
                     <div class="logo"><a href="#">Beatr <span>ice.</span></a></div>
                     <div class="logo-block"><a href="#">Beatr <span>ice.</span></a></div>
-                    <ul class="main-nav js--main-nav">
+                    <ul class="main-nav js--main-nav" id="sidemenu">
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#bio">Bio</a></li>
                         <li><a href="#projects">Projects</a></li>
                         <li><a href="#contact">Contact</a></li>
-                        <i class="fa-solid fa-xmark"></i>
                     </ul>
-                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
                 </nav>
 
                 <div class="header__text">
@@ -101,7 +101,7 @@
                         <div class="layer">
                             <h3>MANdiz Honey</h3>
                             <p>Upscale Honey E-commerce website designed and coded by me using HTML, SASS and JavaScript</p>
-                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://ornate-lollipop-f291fd.netlify.app"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
 
@@ -137,63 +137,62 @@
                         <div class="layer">
                             <h3>Portfolio</h3>
                             <p>Personal portfolio website designed and coded by me using HTML, SASS and JavaScript </p>
-                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://merry-figolla-7c4cda.netlify.app"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                 </div>
 
                 <a href="#" class="btn btn--ghost">See More</a>
             </div>
-
+        </div>
             
         <!-------CONTACT--------->
-            <div class="contact" id="contact">
-                <div class="container contact__box">
-                    <div class="contact__form">
-                        <h1 class="contact__head">Contact Me</h1>
-                        <p><i class="fas fa-paper-plane"></i>ushiksmandi@gmail.com</p>
-                        <p><i class="fas fa-phone-square-alt"></i>+234 819 067 5670</p>
-                        <div class="contact__icons">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <div class="contact" id="contact">
+            <div class="container contact__box">
+                <div class="contact__form">
+                    <h1 class="contact__head">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>ushiksmandi@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>+234 819 067 5670</p>
+                    <div class="contact__icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+
+                    <a href="#" class="btn btn--full" download>Download CV</a>
+                </div>
+
+                <div class="contact__form">
+                    <form action="#" class="form">
+                        <div class="form__group">
+                            <input type="text" class="form__input" placeholder="Your Name" id="name" required>
+                            <label for="name" class="form__label">Your Name</label>
                         </div>
 
-                        <a href="#" class="btn btn--full" download>Download CV</a>
-                    </div>
+                        <div class="form__group">
+                            <input type="email" class="form__input" placeholder="Your Email" id="email" required>
+                            <label for="email" class="form__label">Your Email</label>
+                        </div>
 
-                    <div class="contact__form">
-                        <form action="#" class="form">
-                            <div class="form__group">
-                                <input type="text" class="form__input" placeholder="Your Name" id="name" required>
-                                <label for="name" class="form__label">Your Name</label>
-                            </div>
+                        <div class="form__group">
+                            <input type="text" class="form__input" placeholder="Your Message" id="message" required>
+                            <label for="message" class="form__label">Your Message</label>
+                        </div>
 
-                            <div class="form__group">
-                                <input type="email" class="form__input" placeholder="Your Email" id="email" required>
-                                <label for="email" class="form__label">Your Email</label>
-                            </div>
-
-                            <div class="form__group">
-                                <input type="text" class="form__input" placeholder="Your Message" id="message" required>
-                                <label for="message" class="form__label">Your Message</label>
-                            </div>
-
-                            <div class="form__group">
-                                <button class="btn btn--full">Submit</button>
-                            </div>
-                        </form>
-                    </div>
+                        <div class="form__group">
+                            <button class="btn btn--full">Submit</button>
+                        </div>
+                    </form>
                 </div>
             </div>
+        </div>
 
-            <!-------CONTACT--------->
-            <div class="footer">
-                <p class="copyright">
-                    &copy; Copyright 2022 by Beatrice Egumandi.
-                </p>
-            </div>
+        <!-------FOOTER--------->
+        <div class="footer">
+            <p class="copyright">
+                &copy; Copyright 2022 by Beatrice Egumandi.
+            </p>
         </div>
 
 

@@ -4,12 +4,21 @@
     font-size: 1.5rem;
     line-height: 3rem;
 
+    @include respond(phone) {
+        padding: 3rem 0;
+    }
+
     &__head {
         font-weight: 600;
         font-size: 4rem;
         color: var(--color-white);
         text-align: center;
         margin-bottom: 5rem;
+
+        @include respond(phone) {
+            font-size: 2rem;
+            margin-bottom: 3rem;
+        }
         
         &::after {
             content: "";
@@ -20,6 +29,10 @@
             margin-top: 3rem;
             margin-left: auto;
             margin-right: auto;
+
+            @include respond(phone) {
+                margin-top: 1rem;
+            }
         }
     }
 
@@ -30,6 +43,10 @@
     &__lists {
         display: flex;
         justify-content: space-between;
+    
+        @include respond(phone) {
+            font-size: 1.3rem;
+        }
     }
 
     &__contents {
@@ -58,6 +75,10 @@
     cursor: pointer;
     position: relative;
     margin-bottom: 3rem;
+
+    @include respond(phone) {
+        font-size: 1.5rem;
+    }
 
     &::after {
         content: '';

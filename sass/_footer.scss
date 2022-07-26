@@ -7,5 +7,9 @@
     width: 100%;
     margin-top: 2rem;
     color: var(--color-primary);
+
+    @include respond(phone) {
+        font-size: 1.2rem;
+    }
 }
 
