@@ -1,8 +1,8 @@
 .header {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
 
-    @include respond(phone) {
+    @include respond(tab-port) {
         height: 81vh;
     }
 
@@ -12,7 +12,6 @@
         grid-template-columns: repeat(2, 1fr);
         
         @include respond(phone) {
-            margin-top: 50%;
             grid-template-rows: repeat(2,1fr);
         }
 
@@ -40,9 +39,14 @@
         position: relative;
         //width: 50%;
 
+        @include respond(tab-port) {
+            margin-top: 0rem;
+        }
+
         @include respond(phone) {
             grid-row: 2 / -1;
             grid-column: 1 / 2;
+            margin-top: -10rem;
         }
 
         &:hover &--overlay {
