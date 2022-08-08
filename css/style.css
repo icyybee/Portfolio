@@ -68,6 +68,19 @@ h1 {
     .btn--full:hover {
       background-image: linear-gradient(to right, var(--color-primary-dark), var(--color-primary-light)); }
 
+.light__mode {
+  background-color: #cd9090;
+  color: #000; }
+  .light__mode .header__toggle {
+    align-self: center; }
+  .light__mode .header__toggle--dark {
+    display: none; }
+  .light__mode .header__toggle--light {
+    display: block;
+    margin: 1rem; }
+  .light__mode .bio {
+    color: #333; }
+
 .bio {
   padding: 6rem 0;
   color: var(--color-grey-light-4);
@@ -75,7 +88,8 @@ h1 {
   line-height: 3rem; }
   @media only screen and (max-width: 600px) {
     .bio {
-      padding: 4rem 0; } }
+      padding: 4rem 0;
+      margin-top: 3rem; } }
   .bio__head {
     font-weight: 600;
     font-size: 4rem;
@@ -326,6 +340,21 @@ h1 {
         .header__img--overlay-text i {
           color: var(--color-white);
           width: 1rem; }
+  .header__toggle {
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 4rem;
+    height: 4rem;
+    align-self: flex-end;
+    margin-right: auto;
+    margin-left: 3rem;
+    cursor: pointer; }
+    .header__toggle svg {
+      width: 2rem;
+      height: 2rem;
+      fill: var(--color-white); }
+    .header__toggle--light {
+      display: none; }
 
 nav {
   display: flex;
@@ -426,6 +455,14 @@ nav {
     display: block; }
   .sticky .fa-solid {
     display: none; }
+  .sticky .header__toggle {
+    align-self: center; }
+  .sticky .header__toggle--dark {
+    text-align: center;
+    margin-top: .9rem; }
+  .sticky .header__toggle--light {
+    text-align: center;
+    margin-top: .9rem; }
 
 .projects__head {
   font-weight: 600;

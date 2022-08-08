@@ -116,6 +116,27 @@
             }
         }
     }
+
+    &__toggle {
+        border-radius: 50%;
+        background-color: rgba(0,0,0,.5);
+        width: 4rem;
+        height: 4rem;
+        align-self: flex-end;
+        margin-right: auto;
+        margin-left: 3rem;
+        cursor: pointer;
+        
+        & svg {
+            width: 2rem;
+            height: 2rem;
+            fill: var(--color-white);
+        }
+
+        &--light {
+            display: none;
+        }
+    }
 }
 
 nav {
@@ -254,4 +275,19 @@ nav {
     & .fa-solid {
         display: none;
     }
+
+    & .header__toggle {
+        align-self: center;
+    }
+
+    & .header__toggle--dark {
+        text-align: center;
+        margin-top: .9rem;
+    }
+
+    & .header__toggle--light {
+        text-align: center;
+        margin-top: .9rem;
+    }
 }
+

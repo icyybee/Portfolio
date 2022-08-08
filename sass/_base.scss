@@ -104,3 +104,26 @@ h1 {
         @media only screen and (max-width: 1200px) {@content;}
     }
 }
+
+//lightmode
+.light__mode {
+    background-color: #cd9090;
+    color: #000;
+
+    & .header__toggle {
+        align-self: center;
+    }
+
+    & .header__toggle--dark {
+        display: none;
+    }
+
+    & .header__toggle--light {
+        display: block;
+        margin: 1rem;
+    }
+
+    & .bio {
+        color: #333;
+    }
+}

@@ -6,6 +6,7 @@
 
     @include respond(phone) {
         padding: 4rem 0;
+        margin-top: 3rem;
     }
 
     &__head {

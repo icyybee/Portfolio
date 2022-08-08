@@ -29,8 +29,14 @@ $(document).ready(function(){
 var sidemenu = document.getElementById("sidemenu");
 function openmenu() {
     sidemenu.style.right = "0";
-}
+} 
 
 function closemenu() {
     sidemenu.style.right = "-20rem";
+}
+
+/*lightmode*/
+function myFunction() {
+    var element = document.body;
+    element.classList.toggle("light__mode");
 }
