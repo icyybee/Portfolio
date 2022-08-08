@@ -6,6 +6,10 @@
         height: 81vh;
     }
 
+    @include respond(phone) {
+        height: 70vh;
+    }
+
     &__text {
         margin-top: 30%;
         display: grid;

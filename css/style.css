@@ -244,6 +244,9 @@ h1 {
   @media only screen and (max-width: 900px) {
     .header {
       height: 81vh; } }
+  @media only screen and (max-width: 600px) {
+    .header {
+      height: 70vh; } }
   .header__text {
     margin-top: 30%;
     display: grid;
@@ -486,6 +489,9 @@ nav {
   flex-direction: column;
   text-align: center;
   transition: height .5s; }
+  @media only screen and (max-width: 600px) {
+    .layer {
+      height: 100%; } }
   .layer h3 {
     font-weight: 500;
     margin-bottom: 2rem; }
